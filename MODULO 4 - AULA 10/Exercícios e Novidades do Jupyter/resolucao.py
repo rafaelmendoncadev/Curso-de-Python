@@ -29,6 +29,35 @@ else:
 margem_loja = lucro_loja / (faturamento_pepsi + faturamento_coca)
 print("Margem da loja:", margem_loja)
 
+#A maioria das empresas trabalham com um Código para cada produto que possuem. 
+# A Hashtag&Drink, por exemplo, tem mais de 1.000 produtos e possui um código para 
+# cada produto.
+#Ex: 
+#Coca -> Código: BEB1300543<br>
+#Pepsi -> Código: BEB1300545<br>
+#Vinho Primitivo Lucarelli -> Código: BAC1546001<br>
+#Vodka Smirnoff -> Código: BAC17675002<br>
 
+#Repare que todas as bebidas não alcóolicas tem o início do Código "BEB" e 
+# todas as bebidas alcóolicas tem o início do código "BAC".
+
+#Crie um programa de consulta de bebida que, dado um código qualquer, 
+# identifique se a bebida é alcóolica. O programa deve responder True para 
+# bebidas alcóolicas e False para bebidas não alcóolicas. Para inserir um código, 
+# use um input.
+
+#Dica: Lembre-se do comando in para strings e sempre insira os códigos 
+# com letra maiúscula para facilitar.
+codigo_coca = "BEB1300543"
+codigo_pepsi = "BEB1300545"
+codigo_vinho = "BAC1546001"
+codigo_vodka = "BAC17675002"
+
+codigo_bebida = input("Digite o código da bebida: ")
+if "BAC" in codigo_bebida:
+    print("A bebida é alcóolica.")  
+else:
+    print("A bebida não é alcóolica.")  
+    
 
 
